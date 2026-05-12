@@ -19,5 +19,13 @@ public class BarrasEstado : MonoBehaviour
         energia = Mathf.Clamp(energia, 0f, 100f);
         dinero = Mathf.Clamp(dinero, 0f, 100f);
         estres = Mathf.Clamp(estres, 0f, 100f);
+
+        // si alguna barra llega al límite, el juego se pausa
+        if (energia <= 0 || dinero <= 0 || estres >= 100)
+        {
+        Time.timeScale = 0;
+        }
     }
+
+   
 }

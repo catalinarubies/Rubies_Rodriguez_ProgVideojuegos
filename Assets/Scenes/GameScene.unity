@@ -187,9 +187,9 @@ MonoBehaviour:
   energia: 50
   dinero: 50
   estres: 0
-  tasaEnergia: 0.8
-  tasaDinero: 0.3
-  tasaEstres: 0.5
+  tasaEnergia: 0.38
+  tasaDinero: 0.25
+  tasaEstres: 0.3
 --- !u!4 &55871688
 Transform:
   m_ObjectHideFlags: 0
@@ -535,9 +535,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Lugar
   barrasEstado: {fileID: 55871687}
-  efectoEnergia: 20
+  efectoEnergia: 0.25
   efectoDinero: 0
-  efectoEstres: -15
+  efectoEstres: -0.08
 --- !u!1 &363741811
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,9 +1008,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Lugar
   barrasEstado: {fileID: 55871687}
-  efectoEnergia: -10
-  efectoDinero: -15
-  efectoEstres: -10
+  efectoEnergia: -0.08
+  efectoDinero: -0.12
+  efectoEstres: -0.2
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2243,7 +2243,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 100
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3265,9 +3265,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Lugar
   barrasEstado: {fileID: 55871687}
-  efectoEnergia: 5
-  efectoDinero: -10
-  efectoEstres: -5
+  efectoEnergia: 0.3
+  efectoDinero: -0.08
+  efectoEstres: 0
 --- !u!1 &1517667295
 GameObject:
   m_ObjectHideFlags: 0
@@ -3907,9 +3907,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Lugar
   barrasEstado: {fileID: 55871687}
-  efectoEnergia: -10
-  efectoDinero: 20
-  efectoEstres: 15
+  efectoEnergia: -0.15
+  efectoDinero: 0.3
+  efectoEstres: 0.12
 --- !u!1 &1914667192
 GameObject:
   m_ObjectHideFlags: 0
@@ -4063,9 +4063,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Lugar
   barrasEstado: {fileID: 55871687}
-  efectoEnergia: -5
+  efectoEnergia: -0.08
   efectoDinero: 0
-  efectoEstres: -10
+  efectoEstres: -0.1
 --- !u!1 &1926357728
 GameObject:
   m_ObjectHideFlags: 0
@@ -4749,9 +4749,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Lugar
   barrasEstado: {fileID: 55871687}
-  efectoEnergia: -10
+  efectoEnergia: -0.15
   efectoDinero: 0
-  efectoEstres: 10
+  efectoEstres: 0.06
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
