@@ -188,6 +188,7 @@ MonoBehaviour:
   energia: 50
   dinero: 50
   estres: 0
+  gameManager: {fileID: 55871689}
   tasaEnergia: 0.38
   tasaDinero: 0.25
   tasaEstres: 0.3
@@ -220,6 +221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   panelGameOver: {fileID: 2009687994}
   textTiempo: {fileID: 313204438}
+  barrasEstado: {fileID: 55871687}
 --- !u!1 &70316728
 GameObject:
   m_ObjectHideFlags: 0
@@ -1164,7 +1166,7 @@ MonoBehaviour:
   barrasEstado: {fileID: 55871687}
   efectoEnergia: -0.08
   efectoDinero: -0.12
-  efectoEstres: -0.2
+  efectoEstres: -0.5
   esCasa: 0
   efectoEstresProcrastinacion: 0.06
 --- !u!1 &519420028
@@ -3489,9 +3491,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 4e5c0c606de12504d9100370adb1ba48, type: 3}
-        m_TargetAssemblyTypeName: UnityEditor.MonoScript, UnityEditor.CoreModule
-        m_MethodName: 
+      - m_Target: {fileID: 55871689}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: Reiniciar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3692,7 +3694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Lugar
   barrasEstado: {fileID: 55871687}
-  efectoEnergia: 0.3
+  efectoEnergia: 0.5
   efectoDinero: -0.08
   efectoEstres: 0
   esCasa: 0
@@ -4338,7 +4340,7 @@ MonoBehaviour:
   barrasEstado: {fileID: 55871687}
   efectoEnergia: -0.15
   efectoDinero: 0.3
-  efectoEstres: 0.12
+  efectoEstres: 0.2
   esCasa: 0
   efectoEstresProcrastinacion: 0.06
 --- !u!1 &1914667192
@@ -4496,7 +4498,7 @@ MonoBehaviour:
   barrasEstado: {fileID: 55871687}
   efectoEnergia: -0.08
   efectoDinero: 0
-  efectoEstres: -0.1
+  efectoEstres: -0.4
   esCasa: 0
   efectoEstresProcrastinacion: 0.06
 --- !u!1 &1926357728
@@ -4552,7 +4554,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2009687995
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4721,8 +4723,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.740566, g: 0.55891776, b: 0.64166576, a: 1}
+  m_Sprite: {fileID: 4062854969985130524, guid: c93dce84232ad5a4e9e4fe5f3c89ac96, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4740,8 +4742,8 @@ Transform:
   m_GameObject: {fileID: 2038351410}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.62, y: -0.44, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2.04, y: -0.68, z: 0}
+  m_LocalScale: {x: 10.344015, y: 10.782174, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4784,13 +4786,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.14, y: 0.16}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.2, y: 0.2}
   m_EdgeRadius: 0
 --- !u!1 &2076360807
 GameObject:
@@ -5261,7 +5263,7 @@ MonoBehaviour:
   barrasEstado: {fileID: 55871687}
   efectoEnergia: -0.15
   efectoDinero: 0
-  efectoEstres: 0.06
+  efectoEstres: 0.12
   esCasa: 0
   efectoEstresProcrastinacion: 0.06
 --- !u!1660057539 &9223372036854775807
