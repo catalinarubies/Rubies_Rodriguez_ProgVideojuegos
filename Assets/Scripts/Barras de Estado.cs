@@ -5,6 +5,8 @@ public class BarrasEstado : MonoBehaviour
     public float energia = 50f;
     public float dinero = 50f;
     public float estres = 0f;
+    public GameManager gameManager;
+
 
     public float tasaEnergia = 0.8f;
     public float tasaDinero = 0.3f;
@@ -23,7 +25,7 @@ public class BarrasEstado : MonoBehaviour
         // si alguna barra llega al límite, el juego se pausa
         if (energia <= 0 || dinero <= 0 || estres >= 100)
         {
-        Time.timeScale = 0;
+         gameManager.GameOver();
         }
     }
 
