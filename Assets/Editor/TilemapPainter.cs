@@ -5,10 +5,10 @@ using UnityEngine.Tilemaps;
 public static class TilemapPainter
 {
     private const string TILE_PATH = "Assets/Sprites/Tiles/tile_0036.png";
-    private const int X_MIN = -20;
-    private const int X_MAX = 20;
-    private const int Y_MIN = -12;
-    private const int Y_MAX = 12;
+    private const int X_MIN = -40;
+    private const int X_MAX = 40;
+    private const int Y_MIN = -25;
+    private const int Y_MAX = 25;
 
     [MenuItem("Tools/Paint Tilemap/Pintar con tile_0036")]
     static void PaintWithTile0036()
