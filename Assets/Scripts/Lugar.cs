@@ -11,6 +11,9 @@ public class Lugar : MonoBehaviour
     public bool esCasa = false;
     public float efectoEstresProcrastinacion = 0.06f;
     public bool JugadorAdentro => jugadorAdentro;
+public float TiempoAdentro => tiempoAdentro;
+public bool EsLugarCasa => esCasa;
+
 
     private bool jugadorAdentro = false;
     private float tiempoAdentro = 0f;

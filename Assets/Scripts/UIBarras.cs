@@ -8,6 +8,7 @@ public class UIBarras : MonoBehaviour
     public Slider sliderDinero;
     public Slider sliderEstres;
 
+    // Referencias al Fill de cada slider para cambiar color
     public Image fillEnergia;
     public Image fillDinero;
     public Image fillEstres;
@@ -43,16 +44,23 @@ public class UIBarras : MonoBehaviour
             fillDinero.color = colorNegativo;
             fillEstres.color = colorNegativo;
         }
+        else if (lugarActual.EsLugarCasa && lugarActual.TiempoAdentro >= 30f)
+        {
+            // Fase procrastinacion: estres sube, energia no se recupera
+            fillEnergia.color = colorNegativo;
+            fillDinero.color = colorNeutral;
+            fillEstres.color = colorNegativo;
+        }
         else
         {
-            // Efecto neto = efecto del lugar - degradacion pasiva
+            // Logica normal para todos los lugares
             float netoEnergia = lugarActual.efectoEnergia - barrasEstado.tasaEnergia;
             float netoDinero = lugarActual.efectoDinero - barrasEstado.tasaDinero;
             float netoEstres = lugarActual.efectoEstres + barrasEstado.tasaEstres;
 
             fillEnergia.color = netoEnergia > 0 ? colorPositivo : colorNegativo;
             fillDinero.color = netoDinero > 0 ? colorPositivo : colorNegativo;
-            // Estres: positivo si el neto baja (es negativo)
+            // Estres: positivo si el neto baja
             fillEstres.color = netoEstres <= 0 ? colorPositivo : colorNegativo;
         }
     }
