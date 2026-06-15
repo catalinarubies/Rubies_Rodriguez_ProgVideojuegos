@@ -1444,10 +1444,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
   jugador: {fileID: 2038351414}
   smoothSpeed: 3
-  xMin: -7.7
+  xMin: -7.76
   xMax: 7.8
-  yMin: -3.8
-  yMax: 3.8
+  yMin: -3.84
+  yMax: 3.79
 --- !u!1 &569580566
 GameObject:
   m_ObjectHideFlags: 0
@@ -1732,7 +1732,13 @@ MonoBehaviour:
   fillEnergia: {fileID: 1417379248}
   fillDinero: {fileID: 1159618273}
   fillEstres: {fileID: 569580568}
-  lugares: []
+  lugares:
+  - {fileID: 324880898}
+  - {fileID: 2125290081}
+  - {fileID: 1882791590}
+  - {fileID: 488532230}
+  - {fileID: 1490467195}
+  - {fileID: 1914667196}
 --- !u!1 &689461714
 GameObject:
   m_ObjectHideFlags: 0
@@ -28570,6 +28576,7 @@ GameObject:
   - component: {fileID: 2038351412}
   - component: {fileID: 2038351411}
   - component: {fileID: 2038351415}
+  - component: {fileID: 2038351416}
   m_Layer: 0
   m_Name: Jugador
   m_TagString: Player
@@ -28685,8 +28692,8 @@ Transform:
   m_GameObject: {fileID: 2038351410}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.04, y: -0.68, z: 0}
-  m_LocalScale: {x: 10.344015, y: 10.782174, z: 1}
+  m_LocalPosition: {x: -2.38, y: -0.394, z: 0}
+  m_LocalScale: {x: 4.0024724, y: 4.042249, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -28737,6 +28744,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.2, y: 0.2}
   m_EdgeRadius: 0
+--- !u!95 &2038351416
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038351410}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 109e844b391411445889e7b0115dfafd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2076360807
 GameObject:
   m_ObjectHideFlags: 0
