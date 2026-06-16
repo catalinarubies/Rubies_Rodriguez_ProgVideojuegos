@@ -7,13 +7,16 @@ public class BarrasEstado : MonoBehaviour
     public float estres = 0f;
     public GameManager gameManager;
 
-
     public float tasaEnergia = 0.8f;
     public float tasaDinero = 0.3f;
     public float tasaEstres = 0.5f;
 
+    private bool juegoTerminado = false; // evita llamar GameOver más de una vez
+
     void Update()
     {
+        if (juegoTerminado) return; // si ya terminó, no hace nada
+
         energia -= tasaEnergia * Time.deltaTime;
         dinero -= tasaDinero * Time.deltaTime;
         estres += tasaEstres * Time.deltaTime;
@@ -22,12 +25,10 @@ public class BarrasEstado : MonoBehaviour
         dinero = Mathf.Clamp(dinero, 0f, 100f);
         estres = Mathf.Clamp(estres, 0f, 100f);
 
-        // si alguna barra llega al límite, el juego se pausa
         if (energia <= 0 || dinero <= 0 || estres >= 100)
         {
-         gameManager.GameOver();
+            juegoTerminado = true;
+            gameManager.GameOver();
         }
     }
-
-   
 }
